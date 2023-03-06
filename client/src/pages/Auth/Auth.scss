@@ -1,0 +1,35 @@
+#auth-section{
+    min-height: 100vh;
+    background: linear-gradient(117.37deg, #FD6769 -11.41%, #FFE815 113.41%);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        background-color: var(--bs-white);
+        padding: 40px;
+        border-radius: 24px;
+        border: none;
+        .brand-logo{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1{
+            margin-bottom: 0px;
+        }
+        .box{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 16px;
+            min-height: 240px;
+            margin-bottom: 40px;
+        }
+        .box.personal-account-box {
+            background-image: url('../../../public/images/personal-account.png');
+        }
+        .box.business-account-box {
+            background-image: url('../../../public/images/business-account.png');
+        }
+    }
+}
