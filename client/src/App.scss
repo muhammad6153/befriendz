@@ -1,0 +1,33 @@
+#home-section {
+  min-height: 100vh;
+  background-image: url('../public/images/home-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 80px 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+
+  .brand-logo {
+    margin-bottom: 40px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .owl-theme .owl-dots {
+    margin-bottom: 80px;
+  }
+  .owl-nav button {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+  }
+  .item{
+    padding: 0  100px;
+  }
+}
