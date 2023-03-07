@@ -23,7 +23,7 @@ const Home = () => {
                     </OwlCarousel>
                     <div className="row">
                         <div className="col-md-6">
-                            <Link to="/account-type" className="btn btn-lg w-100 btn-radius btn-primary">Create Account</Link>
+                            <Link to="/create-account" className="btn btn-lg w-100 btn-radius btn-primary">Create Account</Link>
                         </div>                        
                         <div className="col-md-6">
                             <Link to="/sign-in" className="btn btn-lg w-100 btn-radius btn-outline-light">Sign In</Link>

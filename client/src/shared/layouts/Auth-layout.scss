@@ -1,0 +1,111 @@
+#auth-section{
+    min-height: 100vh;
+    background: linear-gradient(117.37deg, #FD6769 -11.41%, #FFE815 113.41%);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-wrapper{
+        background-color: var(--bs-white);
+        padding: 40px;
+        border-radius: 24px;
+        .card {
+            border: none;
+            min-height: calc(100vh - 80px);
+            position: relative;
+            .brand-logo {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+    
+            h1 {
+                margin-bottom: 0px;
+            }
+    
+            .box {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 16px;
+                min-height: 240px;
+                margin-bottom: 40px;
+                padding: 24px;
+                display: flex;
+                justify-content: flex-end;
+                color: #fff;
+                flex-wrap: wrap;
+                flex-direction: column;
+    
+                h3,
+                p {
+                    margin: 0;
+                }
+    
+                p {
+                    font-size: 12px;
+                    line-height: 160%;
+                    color: var(--bg-white);
+                    padding-right: 40px;
+                }
+    
+                div {
+                    position: relative;
+                }
+    
+                a.btn.btn-light {
+                    position: absolute;
+                    right: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    padding: 0px 6px;
+                    font-size: 12px;
+                }
+            }
+    
+            .box.personal-account-box {
+                background-image: url('../../../public/images/personal-account.png');
+            }
+    
+            .box.business-account-box {
+                background-image: url('../../../public/images/business-account.png');
+            }
+    
+            .step-wrapper {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                .step {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 33px;
+                }
+            }
+    
+            &>img {
+                width: max-content;
+                margin: 0 auto 40px;
+            }
+    
+            .fixed-button {
+                position: absolute;
+                bottom: 10%;
+            }
+        }
+        a.back {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: -30px;
+            margin-bottom: 30px;
+            i{
+                color: var(--bs-dark);
+                font-size: 12px;
+                border: solid 1px #F5F5F5;
+                padding: 3px 5px;
+                vertical-align: bottom;
+            }
+        }
+    }
+}

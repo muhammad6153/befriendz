@@ -1,25 +1,27 @@
 import { Link } from 'react-router-dom';
-import BrandLogo from '../../shared/components/brand-logo';
-import './Auth.scss';
+import AuthLayout from '../../shared/layouts/Auth-layout';
 
 const AccountType = () => {
     return (
-        <section id="auth-section" >
-            <div className='container'>
-                <div className='col-md-7 col-lg-6 col-xl-5 mx-auto'>
-                    <div className='card'>
-                        <BrandLogo image="logo-black.png"/>
-                        <h1 className='h2 text-dark'>Welcome 🤗</h1>
-                        <p className='sm'>What type of account do you want to create?</p>
-                        <div className='personal-account-box box'>
-                        </div>
-                        <div className='business-account-box box'>
-                        </div>
-                        <p className='sm text-dark text-center'>Already a member <Link to="/sign-in">Sign In</Link></p>
-                    </div>
+        <AuthLayout>
+            <h1 className='h2 text-dark'>Welcome 🤗</h1>
+            <p className='sm'>What type of account do you want to create?</p>
+            <div className='personal-account-box box'>
+                <h3>Personal Account</h3>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Sed faucibus vitae suscipit pellentesque diam urna quis neque fames.</p>
+                    <Link to="/create-account/personal" className='btn btn-light'><i class="fa fa-arrow-right" aria-hidden="true"></i></Link>
                 </div>
             </div>
-        </section>
+            <div className='business-account-box box'>
+                <h3>Business Account</h3>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Sed faucibus vitae suscipit pellentesque diam urna quis neque fames.</p>
+                    <Link to="/create-account/business" className='btn btn-light'><i class="fa fa-arrow-right" aria-hidden="true"></i></Link>
+                </div>
+            </div>
+            <p className='sm text-dark text-center'>Already a member <Link to="/sign-in">Sign In</Link></p>
+        </AuthLayout>
     )
 }
 export default AccountType;

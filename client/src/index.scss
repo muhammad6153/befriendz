@@ -30,6 +30,9 @@ a {
   text-decoration: none;
   font-weight: 800;
   color: var(--bs-secondary);
+  &:hover{
+    color: var(--bs-primary);
+  }
 }
 .h1,
 h1 {
@@ -48,12 +51,19 @@ h2, .h2{
   line-height: 54px;
   margin-bottom: 24px;
 }
+h3, .h3{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
 p {
   font-family: 'Open Sans';
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
-  color: #949494;
+  color: var(--bs-light-grey);
   margin-bottom: 24px;
 }
 p.lg {
@@ -61,6 +71,10 @@ p.lg {
 }
 p.sm{
   font-size: 14px;
+}
+p a{
+  font-size: inherit;
+  font-weight: inherit;
 }
 // Owl
 .owl-nav button {
@@ -127,4 +141,76 @@ button.owl-prev i {
 }
 .btn-radius{
   border-radius: 30px;
+}
+
+// Forms
+.form-group {
+  margin-bottom: 24px;
+  label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .form-control{
+    background: #F5F5F5;
+    border-radius: 24px 24px 0px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--bs-light-grey);
+    padding: 16px 40px;
+    border-color: var(--bs-light-grey);
+    border: none;
+    border-bottom: 2px solid;
+    &:focus {
+      box-shadow: none;
+    }
+    &::placeholder {
+      color: var(--bs-light-grey);
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: var(--bs-light-grey);
+    }
+    &::-ms-input-placeholder {
+      color: var(--bs-light-grey);
+    }
+  }  
+  &.password {
+    position: relative;
+    img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(50%);
+        right: 20px;
+        cursor: pointer;
+    }
+  }
+}
+p.terms-aggrement {
+  font-size: 12px;
+}
+.code-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .form-group {
+    flex: 0 0 16.66666667%;
+    width: 16.66666667%;
+    overflow: hidden;
+    padding: 6px;
+    margin-bottom: 49px;
+    .form-control {
+      padding: 16px;
+      text-align: center;
+      border-color: var(--bs-light-grey);  
+      color: var(--bs-primary);
+      font-weight: 800;
+      &:focus{
+        color: var(--bs-dark);
+      }
+    }
+  }
 }
